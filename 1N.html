@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>1N</title>
         <style>
             .image {
                 height:100%;
@@ -10,20 +11,20 @@
             .pixelated {
                 image-rendering: pixelated;
             }
-            .direction1 {
-                cursor: move;
-            }
-            .direction2 {
+            a:hover {
                 cursor: zoom-in;
             }
         </style>
-
     </head>
     <body>
-        <img class="image pixelated" src="images/1N.png">
+        <div style="position: relative;">
+            <img class="image pixelated" src="images/1N.png">
+            <a href="1W.html"><div style="position: absolute; left: 0%; top: 0%; width: 12%; height: 100%; background-color: rgba(0,0,0,0);"></div></a>
+            <a href="1E.html"><div style="position: absolute; left: 88%; top: 0%; width: 12%; height: 100%; background-color: rgba(0,0,0,0);"></div></a>
+            <a href="2N.html"><div style="position: absolute; left: 18%; top: 0%; width: 64%; height: 100%; background-color: rgba(0,0,0,0);"></div></a>
+        </div>
         <audio autoplay loop>
             <source src="audio/1N.ogg" type="audio/ogg">
-        
         </audio>
     </body>
 </html>
